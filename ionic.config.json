@@ -1,0 +1,7 @@
+{
+  "name": "masbate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
