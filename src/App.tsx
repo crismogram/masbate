@@ -4,6 +4,8 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import History from './pages/History';
 import ProvinceSeal from './pages/ProvinceSeal';
+import TouristSpots from './pages/TouristSpots';
+import LandArea from './pages/LandArea';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -34,7 +36,9 @@ const App: React.FC = () => (
         <Route exact path="/history"><History /></Route>
         <Route exact path="/home"><Home /></Route>
         <Route exact path="/provinceseal"><ProvinceSeal /></Route>
-
+        <Route exact path="/touristspots"><TouristSpots /></Route>
+        <Route exact path="/landarea"><LandArea /></Route>
+        
 
         <Route exact path="/">
           <Redirect to="/home" />
