@@ -1,7 +1,7 @@
 import { IonPage, IonContent, IonHeader, IonTitle, IonToolbar, IonFooter,
     IonImg, IonButtons, IonBackButton } from "@ionic/react";
-    import HistoryContent from "../components/HistoryContent";
     import './ProvinceSeal.css';
+import ProvinceSealContent from "../components/ProvinceSealContent";
     
     const ProvinceSeal = () => (
         <IonPage>
@@ -11,13 +11,10 @@ import { IonPage, IonContent, IonHeader, IonTitle, IonToolbar, IonFooter,
                         <IonBackButton defaultHref="/home" />
                     </IonButtons>
                 </IonToolbar>
-                <IonToolbar className="provincesealtitle">
-                    
-                </IonToolbar>
             </IonHeader>
     
             <IonContent fullscreen>
-                <HistoryContent />
+                <ProvinceSealContent />
             </IonContent>
             <IonFooter>
                 <IonToolbar slot='end'>
