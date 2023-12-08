@@ -3,6 +3,27 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family: 'OpenSans-Regular', sans-serif;
+  /** background and text color **/
+  --ion-background-color: var(--ion-color-teagreen-primary);
+  --ion-text-color: var(--ion-color-newgray-secondary);
+
+  /** primary newblue-primary **/
+	--ion-color-teagreen-primary: #C5DAC1;
+	--ion-color-teagreen-primary-rgb: 197,218,193;
+	--ion-color-teagreen-primary-contrast: #000000;
+	--ion-color-teagreen-primary-contrast-rgb: 0,0,0;
+	--ion-color-teagreen-primary-shade: #adc0aa;
+	--ion-color-teagreen-primary-tint: #cbdec7;
+
+/** primary newblue-secondary **/
+  --ion-color-newgray-secondary: #3b3b3b;
+  --ion-color-newgray-secondary-rgb: 59,59,59;
+  --ion-color-newgray-secondary-contrast: #ffffff;
+  --ion-color-newgray-secondary-contrast-rgb: 255,255,255;
+  --ion-color-newgray-secondary-shade: #343434;
+  --ion-color-newgray-secondary-tint: #4f4f4f;
+  
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,6 +95,34 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('../../public/assets/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../../public/assets/fonts/OpenSans-Regular.ttf');
+}
+
+.ion-color-newblue-primary {
+	--ion-color-base: var(--ion-color-newblue-primary);
+	--ion-color-base-rgb: var(--ion-color-newblue-primary-rgb);
+	--ion-color-contrast: var(--ion-color-newblue-primary-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-newblue-primary-contrast-rgb);
+	--ion-color-shade: var(--ion-color-newblue-primary-shade);
+	--ion-color-tint: var(--ion-color-newblue-primary-tint);
+}
+
+.ion-color-newblue-secondary {
+	--ion-color-base: var(--ion-color-newblue-secondary);
+	--ion-color-base-rgb: var(--ion-color-newblue-secondary-rgb);
+	--ion-color-contrast: var(--ion-color-newblue-secondary-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-newblue-secondary-contrast-rgb);
+	--ion-color-shade: var(--ion-color-newblue-secondary-shade);
+	--ion-color-tint: var(--ion-color-newblue-secondary-tint);
 }
 
 @media (prefers-color-scheme: dark) {

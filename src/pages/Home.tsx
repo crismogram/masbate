@@ -1,27 +1,53 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter, IonButton, IonButtons, IonIcon, IonImg, IonMenu, IonMenuButton, IonList, IonMenuToggle, IonLabel, IonItem  } from '@ionic/react';
 import './Home.css';
+import { logoTwitter, logoFacebook, logoInstagram } from 'ionicons/icons';
+import HomeContent from '../components/HomeContent';
 
 const Home: React.FC = () => {
   return (
-    <IonPage>
-
+    <>
+      <IonMenu side="end" contentId='main-content'>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Masbate</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle>Menu</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+        <IonContent>
+        <IonList>
+          <IonMenuToggle>
+            <IonItem routerLink="/home" detail={false}><IonLabel>Home</IonLabel></IonItem>
+            <IonItem routerLink="/history" detail={false}><IonLabel>History</IonLabel></IonItem>
+            <IonItem routerLink="/provinceseal" detail={false}><IonLabel>Seal of the Province</IonLabel></IonItem>
+          </IonMenuToggle>
+        </IonList>
+      </IonContent>
+      </IonMenu>
+
+    <IonPage id="main-content">
+    <IonHeader>
+        <IonToolbar>
+            <IonButtons slot="end">
+              <IonMenuButton></IonMenuButton>
+            </IonButtons>
+            <IonTitle>Masbate</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+      <IonContent fullscreen>
+
+        <HomeContent />
       </IonContent>
 
+      <IonFooter>
+        <IonToolbar slot="start">
+
+          {/* <IonIcon icon={logoFacebook} size="large"/>
+          <IonIcon icon={logoTwitter} size="large"/>
+          <IonIcon icon={logoInstagram} size="large"  /> */}
+          <IonTitle size="small">Masbate 2023</IonTitle>
+        </IonToolbar>
+      </IonFooter>
     </IonPage>
+    </>
   );
 };
 
