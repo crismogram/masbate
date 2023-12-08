@@ -1,9 +1,9 @@
 import { IonPage, IonContent, IonHeader, IonTitle, IonToolbar, IonFooter,
     IonImg, IonButtons, IonBackButton } from "@ionic/react";
-    import './ProvinceSeal.css';
-import ProvinceSealContent from "../components/ProvinceSealContent";
+    import './LandArea.css';
+import LandAreaContent from "../components/LandAreaContent";
     
-    const ProvinceSeal = () => (
+    const LandArea = () => (
         <IonPage>
             <IonHeader>
                 <IonToolbar className="provincesealheader">
@@ -14,7 +14,7 @@ import ProvinceSealContent from "../components/ProvinceSealContent";
             </IonHeader>
     
             <IonContent fullscreen>
-                <ProvinceSealContent />
+                <LandAreaContent />
             </IonContent>
             <IonFooter>
                 <IonToolbar slot='end'>
@@ -24,4 +24,4 @@ import ProvinceSealContent from "../components/ProvinceSealContent";
         </IonPage>
     );
     
-    export default ProvinceSeal;
+    export default LandArea;

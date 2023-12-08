@@ -151,3 +151,7 @@ body {
 #masbateimg {
   width: 900px;
 }
+
+.p-justify {
+  text-align: justify;
+}

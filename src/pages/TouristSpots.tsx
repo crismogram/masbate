@@ -1,7 +1,7 @@
 import { IonPage, IonContent, IonHeader, IonTitle, IonToolbar, IonFooter,
     IonImg, IonButtons, IonBackButton } from "@ionic/react";
-    import './ProvinceSeal.css';
-import ProvinceSealContent from "../components/ProvinceSealContent";
+    import './TouristSpots.css';
+import TouristSpotsContent from "../components/TouristSpotsContent";
     
     const ProvinceSeal = () => (
         <IonPage>
@@ -14,7 +14,7 @@ import ProvinceSealContent from "../components/ProvinceSealContent";
             </IonHeader>
     
             <IonContent fullscreen>
-                <ProvinceSealContent />
+                <TouristSpotsContent />
             </IonContent>
             <IonFooter>
                 <IonToolbar slot='end'>

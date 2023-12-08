@@ -1,0 +1,18 @@
+.justify-me {
+    text-align: justify;
+}
+
+ol li{
+    margin: 15px 0;
+}
+
+ol {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.masbatemaps {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}

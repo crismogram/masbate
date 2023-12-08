@@ -11,9 +11,6 @@ const History = () => (
                     <IonBackButton defaultHref="/home" />
                 </IonButtons>
             </IonToolbar>
-            <IonToolbar className="historytitle">
-                
-            </IonToolbar>
         </IonHeader>
 
         <IonContent fullscreen>
