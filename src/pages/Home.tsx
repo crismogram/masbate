@@ -20,6 +20,13 @@ const Home: React.FC = () => {
             <IonItem routerLink="/provinceseal" detail={false}><IonLabel>Seal of the Province</IonLabel></IonItem>
             <IonItem routerLink="/touristspots" detail={false}><IonLabel>Tourist Spots</IonLabel></IonItem>
             <IonItem routerLink="/landarea" detail={false}><IonLabel>Land Area and Maps</IonLabel></IonItem>
+            <IonItem routerLink="/feedback" detail={false}><IonLabel>Feedback</IonLabel></IonItem>
+            <IonItem routerLink="/hotlines" detail={false}><IonLabel>Hotlines</IonLabel></IonItem>
+            <IonItem routerLink="/contact" detail={false}><IonLabel>Contact Us</IonLabel></IonItem>
+
+
+
+
           </IonMenuToggle>
         </IonList>
       </IonContent>

@@ -6,6 +6,9 @@ import History from './pages/History';
 import ProvinceSeal from './pages/ProvinceSeal';
 import TouristSpots from './pages/TouristSpots';
 import LandArea from './pages/LandArea';
+import Feedback from './pages/Feedback';
+import Hotlines from './pages/Hotlines';
+import Contact from './pages/Contact';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -38,6 +41,9 @@ const App: React.FC = () => (
         <Route exact path="/provinceseal"><ProvinceSeal /></Route>
         <Route exact path="/touristspots"><TouristSpots /></Route>
         <Route exact path="/landarea"><LandArea /></Route>
+        <Route exact path="/feedback"><Feedback /></Route>
+        <Route exact path="/hotlines"><Hotlines /></Route>
+        <Route exact path="/contact"><Contact /></Route>
         
 
         <Route exact path="/">
