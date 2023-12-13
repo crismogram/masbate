@@ -23,10 +23,6 @@ const Home: React.FC = () => {
             <IonItem routerLink="/feedback" detail={false}><IonLabel>Feedback</IonLabel></IonItem>
             <IonItem routerLink="/hotlines" detail={false}><IonLabel>Hotlines</IonLabel></IonItem>
             <IonItem routerLink="/contact" detail={false}><IonLabel>Contact Us</IonLabel></IonItem>
-
-
-
-
           </IonMenuToggle>
         </IonList>
       </IonContent>
