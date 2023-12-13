@@ -1,12 +1,12 @@
 import { IonGrid, IonRow, IonCol, IonImg, IonCard, IonCardHeader, 
-    IonCardSubtitle, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel  } from "@ionic/react";
+    IonCardSubtitle, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel, IonNavLink  } from "@ionic/react";
 import './HotlinesContent.css'
 
 const HotlinesContent = () => (
     <IonGrid class='myGrid'>
         <IonRow>
             <IonCol>
-                <h3>Emergency Hotlines</h3>
+            <h2>Emergency Hotlines</h2>
                 <IonList>
                     <IonItem>
                         <IonLabel>
@@ -39,6 +39,7 @@ const HotlinesContent = () => (
                         </IonLabel>
                     </IonItem>
                 </IonList>
+
             </IonCol>
         </IonRow>
     </IonGrid>
