@@ -45,7 +45,6 @@ const App: React.FC = () => (
         <Route exact path="/hotlines"><Hotlines /></Route>
         <Route exact path="/contact"><Contact /></Route>
         
-
         <Route exact path="/">
           <Redirect to="/home" />
 
