@@ -8,7 +8,7 @@ const firebaseApp = initializeApp({
   projectId: process.env.PROJECT_ID,
   storageBucket: process.env.STORAGE_BUCKET,
   messagingSenderId: process.env.MESSAGE_SENDER_ID,
-  appId: process.env.APP_ID,
+  appId: "1:101578118490:web:bb998c0a47443eb8a84f63",
   measurementId: process.env.MEASUREMENT_ID
   });
 
